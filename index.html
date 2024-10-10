@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Best Fantasy Manhwa & Manga Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .manga-list, .manhwa-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .manga, .manhwa {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .manga img, .manhwa img {
+            width: 100%;
+            height: auto;
+        }
+        .manga h3, .manhwa h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .manga p, .manhwa p {
+            margin: 5px 0;
+        }
+        .manga .genre, .manga .author, .manga .year,
+        .manhwa .genre {
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>50 Best Fantasy Manhwa You Must Read</h1>
+    <div class="manhwa-list">
+        <!-- Loop over Manhwa entries -->
+        {% for manhwa in manhwa %}
+        <div class="manhwa">
+            <h2>{{ manhwa.title }}</h2>
+            <p class="genre">Genres: {{ manhwa.genre | join(", ") }}</p>
+            <p>Description: {{ manhwa.description }}</p>
+            <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/{{ manhwa.image | replace('.avif', '.jpg') }}" alt="{{ manhwa.title }} cover" width="200">
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>Manga Collection</h1>
+
+    <div class="manga">
+        <h2>1. One Piece</h2>
+        <p class="genre">Genre: Adventure, Fantasy, Action</p>
+        <p class="description">One Piece is a manga about a group of pirates searching for the ultimate treasure called "One Piece".</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/1.+one_piece_cover.jpg" alt="One Piece">
+        <p><strong>Author:</strong> Eiichiro Oda | <strong>Release Year:</strong> 1997</p>
+    </div>
+
+    <div class="manga">
+        <h2>2. Naruto</h2>
+        <p class="genre">Genre: Adventure, Fantasy, Martial Arts</p>
+        <p class="description">Naruto follows the story of Naruto Uzumaki, a young ninja with a sealed demon fox spirit within him, as he seeks recognition and dreams of becoming the strongest ninja.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/2.+naruto_cover.jpg" alt="Naruto">
+        <p><strong>Author:</strong> Masashi Kishimoto | <strong>Release Year:</strong> 1999</p>
+    </div>
+
+    <div class="manga">
+        <h2>3. Bleach</h2>
+        <p class="genre">Genre: Action, Supernatural, Adventure</p>
+        <p class="description">Bleach follows Ichigo Kurosaki, a teenager who gains the powers of a Soul Reaper and is tasked with protecting the living world from evil spirits.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/3.+bleach_cover.jpg" alt="Bleach">
+        <p><strong>Author:</strong> Tite Kubo | <strong>Release Year:</strong> 2001</p>
+    </div>
+
+    <div class="manga">
+        <h2>4. Attack on Titan</h2>
+        <p class="genre">Genre: Action, Fantasy, Horror</p>
+        <p class="description">Attack on Titan tells the story of humanity's struggle against giant humanoid creatures known as Titans.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/4.+attack_on_titan_cover.jpg" alt="Attack on Titan">
+        <p><strong>Author:</strong> Hajime Isayama | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>5. Death Note</h2>
+        <p class="genre">Genre: Mystery, Psychological, Supernatural</p>
+        <p class="description">Death Note follows a high school student who discovers a mysterious notebook that allows him to kill anyone by writing their name in it.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/5.+death_note_cover.jpg" alt="Death Note">
+        <p><strong>Author:</strong> Tsugumi Ohba | <strong>Release Year:</strong> 2003</p>
+    </div>
+
+    <div class="manga">
+        <h2>6. Fullmetal Alchemist</h2>
+        <p class="genre">Genre: Adventure, Fantasy, Action</p>
+        <p class="description">Fullmetal Alchemist follows two brothers, Edward and Alphonse Elric, who use alchemy in their quest to find the Philosopher's Stone to restore their bodies.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/6.+fullmetal_alchemist_cover.jpg" alt="Fullmetal Alchemist">
+        <p><strong>Author:</strong> Hiromu Arakawa | <strong>Release Year:</strong> 2001</p>
+    </div>
+
+    <div class="manga">
+        <h2>7. Hunter x Hunter</h2>
+        <p class="genre">Genre: Adventure, Fantasy, Action</p>
+        <p class="description">Hunter x Hunter follows Gon Freecss, a young boy who becomes a Hunter to find his father.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/7.+hunter_x_hunter_cover.jpg" alt="Hunter x Hunter">
+        <p><strong>Author:</strong> Yoshihiro Togashi | <strong>Release Year:</strong> 1998</p>
+    </div>
+
+    <div class="manga">
+        <h2>8. One Punch Man</h2>
+        <p class="genre">Genre: Action, Comedy, Superhero</p>
+        <p class="description">One Punch Man is about Saitama, a superhero who can defeat any opponent with a single punch, leading to an existential crisis.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/8.+one_punch_man_cover.jpg" alt="One Punch Man">
+        <p><strong>Author:</strong> ONE | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>9. My Hero Academia</h2>
+        <p class="genre">Genre: Action, Fantasy, Superhero</p>
+        <p class="description">My Hero Academia is set in a world where most people have superpowers called "quirks" and follows a boy who dreams of becoming a hero.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/9.+my_hero_academia_cover.jpg" alt="My Hero Academia">
+        <p><strong>Author:</strong> Kohei Horikoshi | <strong>Release Year:</strong> 2014</p>
+    </div>
+
+    <div class="manga">
+        <h2>10. Tokyo Ghoul</h2>
+        <p class="genre">Genre: Horror, Dark Fantasy</p>
+        <p class="description">Tokyo Ghoul follows Ken Kaneki, a college student who becomes a half-ghoul after a deadly encounter.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/10.+tokyo_ghoul_cover.jpg" alt="Tokyo Ghoul">
+        <p><strong>Author:</strong> Sui Ishida | <strong>Release Year:</strong> 2011</p>
+    </div>
+
+    <div class="manga">
+        <h2>11. Fairy Tail</h2>
+        <p class="genre">Genre: Adventure, Fantasy</p>
+        <p class="description">Fairy Tail follows the adventures of Natsu Dragneel and his friends from the titular wizard guild as they take on missions and battle dark forces.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/11.+fairy_tail_cover.jpg" alt="Fairy Tail">
+        <p><strong>Author:</strong> Hiro Mashima | <strong>Release Year:</strong> 2006</p>
+    </div>
+
+    <div class="manga">
+        <h2>12. Sword Art Online</h2>
+        <p class="genre">Genre: Action, Adventure, Fantasy</p>
+        <p class="description">Sword Art Online is set in a virtual reality MMORPG where players become trapped and must clear the game to escape.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/12.+sword_art_online_cover.jpg" alt="Sword Art Online">
+        <p><strong>Author:</strong> Reki Kawahara | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>13. Demon Slayer: Kimetsu no Yaiba</h2>
+        <p class="genre">Genre: Action, Adventure, Fantasy</p>
+        <p class="description">Demon Slayer follows Tanjiro Kamado, a boy who becomes a demon slayer after his family is slaughtered by demons.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/13.+demon_slayer_cover.jpg" alt="Demon Slayer: Kimetsu no Yaiba">
+        <p><strong>Author:</strong> Koyoharu Gotouge | <strong>Release Year:</strong> 2016</p>
+    </div>
+
+    <div class="manga">
+        <h2>14. JoJo's Bizarre Adventure</h2>
+        <p class="genre">Genre: Action, Adventure, Supernatural</p>
+        <p class="description">JoJo's Bizarre Adventure follows the adventures of the Joestar family across generations as they battle supernatural foes.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/14.+jojos_bizarre_adventure_cover.jpg" alt="JoJo's Bizarre Adventure">
+        <p><strong>Author:</strong> Hirohiko Araki | <strong>Release Year:</strong> 1987</p>
+    </div>
+
+    <div class="manga">
+        <h2>15. One Punch Man</h2>
+        <p class="genre">Genre: Action, Comedy</p>
+        <p class="description">One Punch Man follows Saitama, a hero who can defeat any opponent with a single punch, leading to a sense of boredom and existential crisis.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/15.+one_punch_man_cover.jpg" alt="One Punch Man">
+        <p><strong>Author:</strong> ONE | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>16. Black Clover</h2>
+        <p class="genre">Genre: Action, Fantasy, Adventure</p>
+        <p class="description">Black Clover follows Asta, a boy born without magical power in a world where magic is everything, as he strives to become the Wizard King.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/16.+black_clover_cover.jpg" alt="Black Clover">
+        <p><strong>Author:</strong> Yūki Tabata | <strong>Release Year:</strong> 2015</p>
+    </div>
+
+    <div class="manga">
+        <h2>17. The Promised Neverland</h2>
+        <p class="genre">Genre: Horror, Mystery, Thriller</p>
+        <p class="description">The Promised Neverland follows a group of orphans who discover a dark secret about their orphanage and plan to escape.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/17.+the_promised_neverland_cover.jpg" alt="The Promised Neverland">
+        <p><strong>Author:</strong> Kaiu Shirai | <strong>Release Year:</strong> 2016</p>
+    </div>
+
+    <div class="manga">
+        <h2>18. Attack on Titan</h2>
+        <p class="genre">Genre: Action, Drama, Fantasy</p>
+        <p class="description">Attack on Titan follows humanity's struggle for survival against giant humanoid creatures known as Titans.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/18.+attack_on_titan_cover.jpg" alt="Attack on Titan">
+        <p><strong>Author:</strong> Hajime Isayama | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>19. Mob Psycho 100</h2>
+        <p class="genre">Genre: Action, Comedy, Supernatural</p>
+        <p class="description">Mob Psycho 100 follows Shigeo Kageyama, a powerful psychic who tries to live a normal life while dealing with various supernatural occurrences.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/19.+mob_psycho_100_cover.jpg" alt="Mob Psycho 100">
+        <p><strong>Author:</strong> ONE | <strong>Release Year:</strong> 2012</p>
+    </div>
+
+    <div class="manga">
+        <h2>20. Haikyuu!!</h2>
+        <p class="genre">Genre: Sports, Comedy, Drama</p>
+        <p class="description">Haikyuu!! follows Shoyo Hinata, a high school student who joins the volleyball team and strives to become a top player despite his short stature.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/20.+haikyuu_cover.jpg" alt="Haikyuu!!">
+        <p><strong>Author:</strong> Haruichi Furudate | <strong>Release Year:</strong> 2012</p>
+    </div>
+
+    <div class="manga">
+        <h2>21. Noragami</h2>
+        <p class="genre">Genre: Action, Supernatural, Fantasy</p>
+        <p class="description">Noragami follows Yato, a minor god who aims to gain recognition and build his own shrine.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/21.+noragami_cover.jpg" alt="Noragami">
+        <p><strong>Author:</strong> Adachitoka | <strong>Release Year:</strong> 2010</p>
+    </div>
+
+    <div class="manga">
+        <h2>22. A Silent Voice</h2>
+        <p class="genre">Genre: Drama, Romance, Slice of Life</p>
+        <p class="description">A Silent Voice tells the story of Shoya Ishida, who seeks redemption by reconnecting with Shoko Nishimiya, a deaf girl he bullied in elementary school.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/22.+a_silent_voice_cover.jpg" alt="A Silent Voice">
+        <p><strong>Author:</strong> Yoshitoki Ōima | <strong>Release Year:</strong> 2013</p>
+    </div>
+
+    <div class="manga">
+        <h2>23. One Outs</h2>
+        <p class="genre">Genre: Sports, Psychological</p>
+        <p class="description">One Outs follows Toua Tokuchi, a master gambler who uses his skills to manipulate a professional baseball team to win.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/23.+one_outs_cover.jpg" alt="One Outs">
+        <p><strong>Author:</strong> Shinobu Kaitani | <strong>Release Year:</strong> 2002</p>
+    </div>
+
+    <div class="manga">
+        <h2>24. Blue Lock</h2>
+        <p class="genre">Genre: Sports, Psychological</p>
+        <p class="description">Blue Lock follows a training program designed to create the world's greatest striker for the Japanese national soccer team.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/24.+blue_lock_cover.jpg" alt="Blue Lock">
+        <p><strong>Author:</strong> Muneyuki Kaneshiro | <strong>Release Year:</strong> 2018</p>
+    </div>
+
+    <div class="manga">
+        <h2>25. Food Wars!: Shokugeki no Soma</h2>
+        <p class="genre">Genre: Cooking, Drama, Shounen</p>
+        <p class="description">Food Wars! follows Soma Yukihira, a young chef who enrolls in a prestigious culinary school where students compete in intense cooking battles.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/25.+food_wars_cover.jpg" alt="Food Wars!: Shokugeki no Soma">
+        <p><strong>Author:</strong> Yūto Tsukuda | <strong>Release Year:</strong> 2012</p>
+    </div>
+
+    <div class="manga">
+        <h2>26. The Rising of the Shield Hero</h2>
+        <p class="genre">Genre: Isekai, Adventure, Fantasy</p>
+        <p class="description">The Rising of the Shield Hero follows Naofumi Iwatani, who is summoned to another world as the Shield Hero and faces betrayal and challenges.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/26.+the_rising_of_the_shield_hero_cover.jpg" alt="The Rising of the Shield Hero">
+        <p><strong>Author:</strong> Aneko Yusagi | <strong>Release Year:</strong> 2013</p>
+    </div>
+
+    <div class="manga">
+        <h2>27. Re:Zero - Starting Life in Another World</h2>
+        <p class="genre">Genre: Isekai, Fantasy, Drama</p>
+        <p class="description">Re:Zero follows Subaru Natsuki, who is transported to another world and discovers he has the ability to return from death.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/27.+re_zero_cover.jpg" alt="Re:Zero - Starting Life in Another World">
+        <p><strong>Author:</strong> Tappei Nagatsuki | <strong>Release Year:</strong> 2014</p>
+    </div>
+
+    <div class="manga">
+        <h2>28. Kaguya-sama: Love Is War</h2>
+        <p class="genre">Genre: Romance, Comedy, Psychological</p>
+        <p class="description">Kaguya-sama follows the romantic battles between two student council leaders who are too proud to confess their feelings for each other.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/28.+kaguya_sama_cover.jpg" alt="Kaguya-sama: Love Is War">
+        <p><strong>Author:</strong> Aka Akasaka | <strong>Release Year:</strong> 2015</p>
+    </div>
+
+    <div class="manga">
+        <h2>29. Dorohedoro</h2>
+        <p class="genre">Genre: Action, Fantasy, Mystery</p>
+        <p class="description">Dorohedoro follows Caiman, a man with a lizard head who seeks to uncover the truth behind his transformation in a world of sorcerers.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/29.+dorohedoro_cover.jpg" alt="Dorohedoro">
+        <p><strong>Author:</strong> Q Hayashida | <strong>Release Year:</strong> 2000</p>
+    </div>
+
+    <div class="manga">
+        <h2>30. Yona of the Dawn</h2>
+        <p class="genre">Genre: Adventure, Fantasy, Romance</p>
+        <p class="description">Yona of the Dawn follows Yona, a princess who embarks on a journey to reclaim her kingdom after being betrayed by her beloved cousin.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/30.+yona_of_the_dawn_cover.jpg" alt="Yona of the Dawn">
+        <p><strong>Author:</strong> Mizuho Kusanagi | <strong>Release Year:</strong> 2009</p>
+    </div>
+
+    <div class="manga">
+        <h2>31. The Ancient Magus' Bride</h2>
+        <p class="genre">Genre: Fantasy, Romance, Adventure</p>
+        <p class="description">The Ancient Magus' Bride follows Chise Hatori, a girl who is sold to a magus and learns about the magical world.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/31.+the_ancient_magus_bride_cover.jpg" alt="The Ancient Magus' Bride">
+        <p><strong>Author:</strong> Kore Yamazaki | <strong>Release Year:</strong> 2013</p>
+    </div>
+
+    <div class="manga">
+        <h2>32. Your Lie in April</h2>
+        <p class="genre">Genre: Drama, Romance, Music</p>
+        <p class="description">Your Lie in April follows Kousei Arima, a piano prodigy who lost his ability to hear his own playing, and how he is inspired by a free-spirited violinist.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/32.+your_lie_in_april_cover.jpg" alt="Your Lie in April">
+        <p><strong>Author:</strong> Naoshi Arakawa | <strong>Release Year:</strong> 2011</p>
+    </div>
+
+    <div class="manga">
+        <h2>33. Nichijou</h2>
+        <p class="genre">Genre: Comedy, Slice of Life</p>
+        <p class="description">Nichijou depicts the absurd daily lives of three high school girls and their bizarre interactions with their classmates and other characters.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/33.+nichijou_cover.jpg" alt="Nichijou">
+        <p><strong>Author:</strong> Keiichi Arawi | <strong>Release Year:</strong> 2006</p>
+    </div>
+
+    <div class="manga">
+        <h2>34. Golden Kamuy</h2>
+        <p class="genre">Genre: Action, Adventure, Historical</p>
+        <p class="description">Golden Kamuy follows Saichi Sugimoto, a veteran of the Russo-Japanese War, as he searches for a hidden treasure of gold in Hokkaido.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/34.+golden_kamuy_cover.jpg" alt="Golden Kamuy">
+        <p><strong>Author:</strong> Satoru Noda | <strong>Release Year:</strong> 2014</p>
+    </div>
+
+    <div class="manga">
+        <h2>35. The Seven Deadly Sins</h2>
+        <p class="genre">Genre: Fantasy, Adventure, Action</p>
+        <p class="description">The Seven Deadly Sins follows a group of knights who are falsely accused of treason and embark on a journey to clear their names.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/35.+the_seven_deadly_sins_cover.jpg" alt="The Seven Deadly Sins">
+        <p><strong>Author:</strong> Nakaba Suzuki | <strong>Release Year:</strong> 2012</p>
+    </div>
+
+    <div class="manga">
+        <h2>36. Akame ga Kill!</h2>
+        <p class="genre">Genre: Action, Fantasy, Drama</p>
+        <p class="description">Akame ga Kill! follows Tatsumi, a boy who joins an assassination group to fight against a corrupt empire.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/36.+akame_ga_kill_cover.jpg" alt="Akame ga Kill!">
+        <p><strong>Author:</strong> Takahiro | <strong>Release Year:</strong> 2010</p>
+    </div>
+
+    <div class="manga">
+        <h2>37. Cells at Work!</h2>
+        <p class="genre">Genre: Comedy, Slice of Life, Science</p>
+        <p class="description">Cells at Work! depicts the daily lives of cells in the human body as they work together to maintain health.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/37.+cells_at_work_cover.jpg" alt="Cells at Work!">
+        <p><strong>Author:</strong> Akane Shimizu | <strong>Release Year:</strong> 2015</p>
+    </div>
+
+    <div class="manga">
+        <h2>38. Tokyo Revengers</h2>
+        <p class="genre">Genre: Action, Drama, Fantasy</p>
+        <p class="description">Tokyo Revengers follows Takemichi Hanagaki, who discovers he can travel back in time and seeks to save his girlfriend from a tragic fate.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/38.+tokyo_revengers_cover.jpg" alt="Tokyo Revengers">
+        <p><strong>Author:</strong> Ken Wakui | <strong>Release Year:</strong> 2017</p>
+    </div>
+
+    <div class="manga">
+        <h2>39. The God of High School</h2>
+        <p class="genre">Genre: Action, Martial Arts, Fantasy</p>
+        <p class="description">The God of High School follows Jin Mori, a martial artist who participates in a tournament to prove himself as the strongest high school student.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/39.+the_god_of_high_school_cover.jpg" alt="The God of High School">
+        <p><strong>Author:</strong> Yongje Park | <strong>Release Year:</strong> 2011</p>
+    </div>
+
+    <div class="manga">
+        <h2>40. D.Gray-man</h2>
+        <p class="genre">Genre: Action, Dark Fantasy, Adventure</p>
+        <p class="description">D.Gray-man follows Allen Walker, an exorcist who fights against demons known as Akuma and seeks to find the secrets of his past.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/40.+d_gray_man_cover.jpg" alt="D.Gray-man">
+        <p><strong>Author:</strong> Katsura Hoshino | <strong>Release Year:</strong> 2004</p>
+    </div>
+    
+    <div class="manga">
+        <h2>41. Bungou Stray Dogs</h2>
+        <p class="genre">Genre: Animation</p>
+        <p class="description">A young maiden is kidnapped and sold into servitude at the emperor's palace, where she secretly employs her pharmacist skills with the help of the head eunuch to unravel medical mysteries in the inner court.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/41.+the-apothecary-diaries.avif" alt="Bungou Stray Dogs">
+        <p><strong>Author:</strong> Natsu Hyûga | <strong>Release Year:</strong> 2023</p>
+    </div>
+
+    <div class="manga">
+        <h2>42. Mobile Suit Gundam: The Origin</h2>
+        <p class="genre">Genre: Animation</p>
+        <p class="description">Mobile Suit Gundam: The Origin is a Japanese manga series that retells the story of the 1979 anime television series Mobile Suit Gundam.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/42.+mobile_suit_gundam_the_origin_cover.avif" alt="Mobile Suit Gundam: The Origin">
+        <p><strong>Author:</strong> Yoshikazu Yasuhiko | <strong>Release Year:</strong> 2014</p>
+    </div>
+
+    <div class="manga">
+        <h2>43. Kuroko's Basketball</h2>
+        <p class="genre">Genre: Comedy, Sports</p>
+        <p class="description">Kuroko no Basuke tells the story of a high school basketball team trying to make it to the top of Japan.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/43.+kuroko-s-basketball.avif" alt="Kuroko's Basketball">
+        <p><strong>Author:</strong> Tadatoshi Fujimaki | <strong>Release Year:</strong> 2008</p>
+    </div>
+
+    <div class="manga">
+        <h2>44. Ashita No Joe</h2>
+        <p class="genre">Genre: Sports</p>
+        <p class="description">Ashita no Joe is a Japanese boxing manga series about a tragic hero who represents the struggle of the lower class.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/44.+ashita-no-joe.avif" alt="Ashita No Joe">
+        <p><strong>Author:</strong> Asao Takamori | <strong>Release Year:</strong> 1968</p>
+    </div>
+
+    <div class="manga">
+        <h2>45. Kamisama Kiss</h2>
+        <p class="genre">Genre: Romantic Comedy, Supernatural</p>
+        <p class="description">Kamisama Kiss is a manga series about a young woman who inherits a shrine and becomes a local deity.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/45.+kamisama-kiss.avif" alt="Kamisama Kiss">
+        <p><strong>Author:</strong> Julietta Suzuki | <strong>Release Year:</strong> 2008</p>
+    </div>
+
+    <div class="manga">
+        <h2>46. March Comes in Like a Lion</h2>
+        <p class="genre">Genre: Animation</p>
+        <p class="description">March Comes in Like a Lion is a manga series about a young, introverted shogi player who develops his skills and relationships as he matures.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/46.+kengo-kawanishi-in-march-comes-in-like-a-lion-2016.avif" alt="March Comes in Like a Lion">
+        <p><strong>Author:</strong> Kengo Kawanishi | <strong>Release Year:</strong> 2016</p>
+    </div>
+
+    <div class="manga">
+        <h2>47. 20th Century Boys</h2>
+        <p class="genre">Genre: Mystery, Science Fiction, Thriller</p>
+        <p class="description">It tells the story of Kenji Endo and his friends, who notice that a cult-leader known only as Friend is out to destroy the world, and that his cult icon bears a striking resemblance to a symbol developed during their childhoods.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/47.+20th-century-boys.avif" alt="20th Century Boys">
+        <p><strong>Author:</strong> Naoki Urasawa | <strong>Release Year:</strong> 1999</p>
+    </div>
+
+    <div class="manga">
+        <h2>48. A Silent Voice</h2>
+        <p class="genre">Genre: Drama</p>
+        <p class="description">A Silent Voice is a manga about a boy who bullies a deaf girl, and the consequences of his actions.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/48.+a-silent-voice.avif" alt="A Silent Voice">
+        <p><strong>Author:</strong> Yoshitoki Ōima | <strong>Release Year:</strong> 2013</p>
+    </div>
+
+    <div class="manga">
+        <h2>49. Fist of the North Star</h2>
+        <p class="genre">Genre: Drama, Action, Science Fiction</p>
+        <p class="description">Fist of the North Star is a manga series about a warrior named Ken who fights to bring justice to a post-apocalyptic world.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/49.+fist-of-the-north-star.avif" alt="Fist of the North Star">
+        <p><strong>Author:</strong> Buronson (Yoshiyuki Okamura) | <strong>Release Year:</strong> 1983</p>
+    </div>
+
+    <div class="manga">
+        <h2>50. Grand Blue Dreaming</h2>
+        <p class="genre">Genre: Comedy</p>
+        <p class="description">Grand Blue Dreaming is a coming-of-age manga series about Iori Kitahara, who moves to a seaside town for college after graduating from an all-boys' high school.</p>
+        <img src="https://manhwa-rushikesh.s3.ap-south-1.amazonaws.com/50+.grand-blue-dreaming.avif" alt="Grand Blue Dreaming">
+        <p><strong>Author:</strong> Kenji Inoue | <strong>Release Year:</strong> 2014</p>
+    </div>
+
+    <!-- Existing manga entries from 1 to 40 go here -->
+
+</div>
+
+</body>
+</html>
+
+This HTML code contains all 20 manga entries, each with an image, title, genre, description, author, and release year. You can copy-paste this into an HTML file to display the complete manga collection. Let me know if you need further assistance!
